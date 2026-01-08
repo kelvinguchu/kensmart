@@ -3,6 +3,7 @@ import { Link } from '@tanstack/react-router'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
+import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -14,6 +15,7 @@ import {
   SelectValue,
 } from '@/components/ui/select'
 import { Checkbox } from '@/components/ui/checkbox'
+import { sendRegisterEmail } from '@/server/email'
 
 // Zod v4 schema
 const registerSchema = z.object({
@@ -66,7 +68,25 @@ export function RegisterForm() {
 
   const onSubmit = async (data: RegisterFormData) => {
     console.log('Form data:', { ...data, subMeters })
-    // TODO: Submit to backend
+    // Submit to email
+    try {
+      const result = await sendRegisterEmail({
+        data: {
+          ...data,
+          subMeters,
+        },
+      })
+
+      if (result.success) {
+        toast.success('Registration successful! Check your email.')
+        // TODO: Reset form or redirect
+      } else {
+        toast.error('Failed to register. Please try again.')
+      }
+    } catch (error) {
+      console.error(error)
+      toast.error('An error occurred.')
+    }
   }
 
   return (

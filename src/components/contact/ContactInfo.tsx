@@ -6,10 +6,12 @@ import {
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
+import { toast } from 'sonner'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
+import { sendContactEmail } from '@/server/email'
 
 // Zod v4 schema using top-level validators
 const contactSchema = z.object({
@@ -33,9 +35,18 @@ export function ContactInfo() {
   })
 
   const onSubmit = async (data: ContactFormData) => {
-    // TODO: Send to backend
-    console.log('Form submitted:', data)
-    reset()
+    try {
+      const result = await sendContactEmail({ data })
+      if (result.success) {
+        toast.success('Message sent successfully!')
+        reset()
+      } else {
+        toast.error('Failed to send message. Please try again.')
+      }
+    } catch (error) {
+      console.error(error)
+      toast.error('An error occurred.')
+    }
   }
 
   return (
