@@ -67,7 +67,7 @@ export function ContactInfo() {
           <div className="lg:col-span-2 bg-white dark:bg-card rounded-2xl p-6 border border-border">
             <h2 className="text-xl font-bold mb-6">Send us a Message</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="name">Full Name</Label>
                   <Input
@@ -96,7 +96,7 @@ export function ContactInfo() {
                   )}
                 </div>
               </div>
-              <div className="grid sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <Label htmlFor="phone">Phone Number</Label>
                   <Input
