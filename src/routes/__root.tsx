@@ -8,6 +8,7 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
 import { Header } from '../components/layout/Header'
 import { Footer } from '../components/layout/Footer'
+import { FloatingWhatsApp } from '../components/common/FloatingWhatsApp'
 import appCss from '../styles.css?url'
 
 export const Route = createRootRoute({
@@ -103,6 +104,7 @@ function RootComponent() {
           <Outlet />
         </main>
         <Footer />
+        <FloatingWhatsApp />
         <Scripts />
       </div>
     </RootDocument>
@@ -125,7 +127,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               logo: 'https://kensmart.co.ke/logo-for-lightmode.png',
               contactPoint: {
                 '@type': 'ContactPoint',
-                telephone: '+254700000000',
+                telephone: '+254712431201',
                 contactType: 'customer service',
               },
               sameAs: [
