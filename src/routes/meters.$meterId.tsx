@@ -103,7 +103,7 @@ function MeterDetailsPage() {
 
   if (!product) {
     return (
-      <main className="pt-24">
+      <main className="pt-8 md:pt-24">
         <div className="container max-w-screen-2xl px-4 sm:px-8 py-16 text-center">
           <h1 className="text-2xl font-bold">Product not found</h1>
           <p className="text-muted-foreground mt-2">
@@ -115,7 +115,7 @@ function MeterDetailsPage() {
   }
 
   return (
-    <main className="pt-24">
+    <main className="pt-8 md:pt-24">
       <MeterHero product={product} />
       <MeterSpecs product={product} />
     </main>
