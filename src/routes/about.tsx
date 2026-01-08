@@ -56,7 +56,7 @@ export const Route = createFileRoute('/about')({
 
 function AboutPage() {
   return (
-    <main className="pt-24">
+    <main className="pt-16 md:pt-24">
       <AboutHero />
       <MissionVision />
       <Values />

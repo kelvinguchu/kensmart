@@ -1,4 +1,4 @@
-import { Link } from '@tanstack/react-router'
+import { Link, useRouterState } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { ArrowRight, ChevronDown, Menu } from 'lucide-react'
 import { products } from '@/data/products'
@@ -20,6 +20,8 @@ import {
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = useRouterState({ select: (s) => s.location.pathname })
+  const isHome = pathname === '/'
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,9 +36,9 @@ export function Header() {
       <header
         className={cn(
           'fixed top-0 inset-x-0 z-50 w-full py-2 transition-all duration-300 border-b',
-          isScrolled
-            ? 'bg-background/80 backdrop-blur-md border-border/40 shadow-sm'
-            : 'bg-transparent border-transparent',
+          isHome && !isScrolled
+            ? 'bg-transparent border-transparent'
+            : 'bg-background/80 backdrop-blur-md border-border/40 shadow-sm',
         )}
       >
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
