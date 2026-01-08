@@ -247,7 +247,7 @@ export function Header() {
                     <SheetClose asChild>
                       <Link to="/register">
                         <Button className="w-full rounded-md font-semibold text-lg">
-                          Get Started Today
+                          Register
                         </Button>
                       </Link>
                     </SheetClose>

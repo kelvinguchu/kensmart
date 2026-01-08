@@ -105,10 +105,10 @@ export function RegisterForm() {
       {/* Form */}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {/* Personal Information */}
-        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 space-y-4">
+        <div className="bg-white dark:bg-card rounded-xl border border-border p-4 sm:p-6 space-y-4">
           <h2 className="text-lg font-bold">Personal Information</h2>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName">First Name *</Label>
               <Input
@@ -137,7 +137,7 @@ export function RegisterForm() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="phone">Phone Number *</Label>
               <Input
@@ -168,7 +168,7 @@ export function RegisterForm() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="idNumber">ID Number *</Label>
               <Input
@@ -199,10 +199,10 @@ export function RegisterForm() {
         </div>
 
         {/* Property Information */}
-        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 space-y-4">
+        <div className="bg-white dark:bg-card rounded-xl border border-border p-4 sm:p-6 space-y-4">
           <h2 className="text-lg font-bold">Property Information</h2>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="county">County *</Label>
               <Input
@@ -231,7 +231,7 @@ export function RegisterForm() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label>Building Type *</Label>
               <Controller
@@ -284,10 +284,10 @@ export function RegisterForm() {
         </div>
 
         {/* Mother Meter Information */}
-        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 space-y-4">
+        <div className="bg-white dark:bg-card rounded-xl border border-border p-4 sm:p-6 space-y-4">
           <h2 className="text-lg font-bold">Mother Meter Details</h2>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="motherMeter">Mother Meter Number *</Label>
               <Input
@@ -317,7 +317,7 @@ export function RegisterForm() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label>Payment Mode *</Label>
               <Controller
@@ -366,7 +366,7 @@ export function RegisterForm() {
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label>Who pays the KPLC bill? *</Label>
               <Controller
@@ -413,7 +413,7 @@ export function RegisterForm() {
         </div>
 
         {/* Sub-Meters */}
-        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 space-y-4">
+        <div className="bg-white dark:bg-card rounded-xl border border-border p-4 sm:p-6 space-y-4">
           <div className="flex items-center justify-between">
             <h2 className="text-lg font-bold">Sub-Meter Numbers</h2>
             <Button
@@ -450,10 +450,10 @@ export function RegisterForm() {
         </div>
 
         {/* Technician Information */}
-        <div className="bg-white dark:bg-card rounded-xl border border-border p-6 space-y-4">
+        <div className="bg-white dark:bg-card rounded-xl border border-border p-4 sm:p-6 space-y-4">
           <h2 className="text-lg font-bold">Technician Details (Optional)</h2>
 
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="techName">Technician Name</Label>
               <Input
@@ -484,12 +484,13 @@ export function RegisterForm() {
                 id="terms"
                 checked={field.value}
                 onCheckedChange={field.onChange}
+                className="mt-0.5 shrink-0"
               />
             )}
           />
-          <Label
+          <label
             htmlFor="terms"
-            className="font-normal text-sm leading-relaxed cursor-pointer"
+            className="font-normal text-sm leading-relaxed cursor-pointer flex-1 select-none"
           >
             I accept the{' '}
             <Link to="/terms" className="text-primary hover:underline">
@@ -500,7 +501,7 @@ export function RegisterForm() {
               Privacy Policy
             </Link>{' '}
             and confirm that all information provided is accurate.
-          </Label>
+          </label>
         </div>
         {errors.terms && (
           <p className="text-sm text-destructive">{errors.terms.message}</p>

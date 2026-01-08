@@ -38,7 +38,7 @@ export const Route = createFileRoute('/register')({
 
 function RegisterPage() {
   return (
-    <main className="pt-12 md:pt-24 pb-12">
+    <main className="pt-24 pb-12">
       <RegisterForm />
     </main>
   )

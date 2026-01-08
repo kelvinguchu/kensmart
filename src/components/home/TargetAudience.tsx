@@ -63,7 +63,7 @@ export function TargetAudience() {
       <div className="container max-w-screen-2xl px-4 sm:px-8 space-y-8">
         <div className="flex items-center justify-center gap-2 sm:gap-4 w-full">
           <div className="h-0.5 bg-primary w-8 sm:w-12 md:w-24 lg:w-32 rounded-full" />
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-center whitespace-nowrap">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight text-center">
             Industries <span className="text-primary">We Support</span>
           </h2>
           <div className="h-0.5 bg-primary w-8 sm:w-12 md:w-24 lg:w-32 rounded-full" />

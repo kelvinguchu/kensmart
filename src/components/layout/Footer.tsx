@@ -4,7 +4,7 @@ import { products } from '@/data/products'
 export function Footer() {
   return (
     <footer className="border-t bg-foreground text-background">
-      <div className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-4 pt-12 pb-24 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
           <div className="space-y-4 max-w-sm">
             <img

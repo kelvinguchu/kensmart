@@ -37,7 +37,7 @@ export const Route = createFileRoute('/terms')({
 
 function TermsPage() {
   return (
-    <main className="pt-16 md:pt-24 pb-12">
+    <main className="pt-24 pb-12">
       <section className="py-16 bg-background">
         <div className="container max-w-3xl px-4 sm:px-8">
           <h1 className="text-4xl font-bold tracking-tight mb-8">
