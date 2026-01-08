@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://kensmart.co.ke/meters/integrated</loc>
+    <image:image>
+      <image:loc>https://kensmart.co.ke/products/integrated-electric.avif</image:loc>
+      <image:title>Integrated Electric Prepaid Meter</image:title>
+      <image:caption>A unified prepaid metering system with integrated keypad and LCD display.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kensmart.co.ke/meters/split</loc>
+    <image:image>
+      <image:loc>https://kensmart.co.ke/products/split-electric.avif</image:loc>
+      <image:title>Split Electric Prepaid Meter</image:title>
+      <image:caption>Secure split metering system with separate measurement unit and customer interface unit.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kensmart.co.ke/meters/water</loc>
+    <image:image>
+      <image:loc>https://kensmart.co.ke/products/water-prepaid.avif</image:loc>
+      <image:title>Water Prepaid Meter</image:title>
+      <image:caption>Intelligent water metering solution with leak detection and automatic valve control.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kensmart.co.ke/meters/three-phase</loc>
+    <image:image>
+      <image:loc>https://kensmart.co.ke/products/3-phase-electric.avif</image:loc>
+      <image:title>3 Phase Prepaid Meter</image:title>
+      <image:caption>Industrial-grade 3-phase prepaid meter for commercial and heavy-duty applications.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://kensmart.co.ke/meters/gas</loc>
+    <image:image>
+      <image:loc>https://kensmart.co.ke/products/gas-prepaid.avif</image:loc>
+      <image:title>Gas Prepaid Meter</image:title>
+      <image:caption>Safe and accurate prepaid gas meter with emergency shut-off valve.</image:caption>
+    </image:image>
+  </url>
+</urlset>
