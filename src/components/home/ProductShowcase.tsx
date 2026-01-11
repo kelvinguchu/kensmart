@@ -35,13 +35,33 @@ export function ProductShowcase() {
                     className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110 p-4"
                   />
                   {/* Price Tag Overlay */}
+                  {/* Price Tag Overlay */}
                   <div className="absolute bottom-0 right-0 bg-background/95 backdrop-blur-md px-4 py-2 rounded-tl-2xl border-t border-l border-border/50 shadow-sm z-10">
-                    <p className="font-bold text-sm">
-                      <span className="text-[10px] uppercase text-muted-foreground mr-1 font-semibold">
-                        KES
-                      </span>
-                      {product.price}
-                    </p>
+                    {product.wholesalePrice && product.retailPrice ? (
+                      <div className="flex flex-col items-end leading-tight">
+                        <p className="font-bold text-xs text-muted-foreground">
+                          <span className="text-[10px] uppercase mr-1">Wholesale:</span>
+                          <span className="text-[9px] uppercase mr-1">KES</span>
+                          {product.wholesalePrice}
+                        </p>
+                        <p className="font-bold text-sm text-primary">
+                          <span className="text-[10px] uppercase text-muted-foreground mr-1">
+                            Retail:
+                          </span>
+                          <span className="text-[9px] uppercase text-muted-foreground mr-1">
+                            KES
+                          </span>
+                          {product.retailPrice}
+                        </p>
+                      </div>
+                    ) : (
+                      <p className="font-bold text-sm">
+                        <span className="text-[10px] uppercase text-muted-foreground mr-1 font-semibold">
+                          KES
+                        </span>
+                        {product.price}
+                      </p>
+                    )}
                   </div>
                 </div>
 

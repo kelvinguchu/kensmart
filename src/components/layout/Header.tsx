@@ -83,6 +83,17 @@ export function Header() {
               About
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
             </Link>
+            <Link
+              to="/gallery"
+              activeProps={{ className: 'text-primary font-semibold' }}
+              inactiveProps={{
+                className: 'text-muted-foreground hover:text-foreground',
+              }}
+              className="text-sm font-medium transition-colors relative group cursor-pointer"
+            >
+              Gallery
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
+            </Link>
 
             {/* Solutions Dropdown */}
             <HoverCard openDelay={0} closeDelay={100}>
@@ -202,6 +213,14 @@ export function Header() {
                             className="text-lg font-medium hover:text-primary transition-colors"
                           >
                             About
+                          </Link>
+                        </SheetClose>
+                        <SheetClose asChild>
+                          <Link
+                            to="/gallery"
+                            className="text-lg font-medium hover:text-primary transition-colors"
+                          >
+                            Gallery
                           </Link>
                         </SheetClose>
                         <SheetClose asChild>

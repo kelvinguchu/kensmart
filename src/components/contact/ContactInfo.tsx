@@ -168,10 +168,10 @@ export function ContactInfo() {
                 <div>
                   <h3 className="font-semibold mb-0.5">Call Us</h3>
                   <a
-                    href="tel:+254712431201"
+                    href="tel:+254701860991"
                     className="text-sm text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +254 712 431201
+                    +254 701 860 991
                   </a>
                 </div>
               </div>
@@ -183,6 +183,10 @@ export function ContactInfo() {
                 <div>
                   <h3 className="font-semibold mb-0.5">Visit Us</h3>
                   <p className="text-sm text-muted-foreground">
+                    Kirima House 2nd Floor, Room 10
+                    <br />
+                    Along Duruma Road
+                    <br />
                     Nairobi, Kenya
                   </p>
                 </div>

@@ -97,7 +97,7 @@ export function Hero() {
                 <div className="bg-white dark:bg-card rounded-2xl shadow-2xl border border-border p-5 w-[240px]">
                   <div className="bg-slate-50 dark:bg-slate-800 rounded-xl h-40 flex items-center justify-center mb-3">
                     <img
-                      src="/products/integrated-electric.avif"
+                      src="/products/integrated-electric.jpeg"
                       alt="Electric Meter"
                       className="max-h-36 object-contain"
                     />

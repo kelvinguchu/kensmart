@@ -43,7 +43,7 @@ export const Route = createFileRoute('/contact')({
             name: 'Kensmart Utilities Limited',
             contactPoint: {
               '@type': 'ContactPoint',
-              telephone: '+254700000000',
+              telephone: '+254701860991',
               contactType: 'customer service',
               areaServed: 'KE',
               availableLanguage: ['en', 'sw'],

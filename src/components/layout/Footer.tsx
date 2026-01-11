@@ -108,11 +108,20 @@ export function Footer() {
                 </li>
                 <li>
                   <a
-                    href="tel:+254712431201"
+                    href="tel:+254701860991"
                     className="hover:text-primary cursor-pointer"
                   >
-                    +254 712 431 201
+                    +254 701 860 991
                   </a>
+                </li>
+                <li>
+                  <p className="text-sm text-background/70 mt-2">
+                    Kirima House 2nd Floor, Room 10
+                    <br />
+                    Along Duruma Road
+                    <br />
+                    Nairobi, Kenya
+                  </p>
                 </li>
               </ul>
             </div>

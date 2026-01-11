@@ -10,6 +10,8 @@ export interface Product {
   features: Array<string>
   idealFor: Array<string>
   price: string
+  wholesalePrice?: string
+  retailPrice?: string
   image: string
   icon: IconType
   color: string
@@ -38,8 +40,10 @@ export const products: Array<Product> = [
       'Hostel accommodations',
       'Cost-effective property solutions',
     ],
-    price: '4,500',
-    image: '/products/integrated-electric.avif',
+    price: '5,000',
+    wholesalePrice: '4,500',
+    retailPrice: '5,000',
+    image: '/products/integrated-electric.jpeg',
     icon: HiLightningBolt,
     color: 'text-cyan-500',
     bgColor: 'bg-cyan-50 dark:bg-cyan-950/20',
@@ -65,8 +69,10 @@ export const products: Array<Product> = [
       'Properties requiring theft prevention',
       'Business premises',
     ],
-    price: '7,500',
-    image: '/products/split-electric.avif',
+    price: '7,000',
+    wholesalePrice: '6,500',
+    retailPrice: '7,000',
+    image: '/products/split-electric.jpeg',
     icon: HiLightningBolt,
     color: 'text-cyan-500',
     bgColor: 'bg-cyan-50 dark:bg-cyan-950/20',
@@ -92,7 +98,7 @@ export const products: Array<Product> = [
       'Water conservation projects',
       'Gated developments',
     ],
-    price: '12,500',
+    price: '11,000',
     image: '/products/water-prepaid.avif',
     icon: HiBeaker,
     color: 'text-teal-500',
@@ -119,7 +125,7 @@ export const products: Array<Product> = [
       'Corporate buildings',
       'Industrial parks',
     ],
-    price: '18,500',
+    price: '17,000',
     image: '/products/3-phase-electric.avif',
     icon: HiLightningBolt,
     color: 'text-cyan-500',
@@ -145,7 +151,7 @@ export const products: Array<Product> = [
       'Residential gas compounds',
       'Centralized gas buildings',
     ],
-    price: '9,000',
+    price: '17,000',
     image: '/products/gas-prepaid.avif',
     icon: HiFire,
     color: 'text-emerald-600',

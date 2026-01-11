@@ -1,9 +1,11 @@
 import { useState } from 'react'
+import { HiDownload } from 'react-icons/hi'
 import { Link } from '@tanstack/react-router'
 import { Controller, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { z } from 'zod'
 import { toast } from 'sonner'
+import { TermsContent } from '@/components/common/TermsContent'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
@@ -100,6 +102,20 @@ export function RegisterForm() {
           Fill out the form below to register your purchased meters with
           Kensmart.
         </p>
+        <div className="mt-4">
+          <a
+            href="/kensmart-registration-form.pdf"
+            download="kensmart-registration-form.pdf"
+          >
+            <Button
+              variant="outline"
+              className="gap-2 hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer"
+            >
+              <HiDownload className="w-4 h-4" />
+              Download Offline Form
+            </Button>
+          </a>
+        </div>
       </div>
 
       {/* Form */}
@@ -421,6 +437,7 @@ export function RegisterForm() {
               variant="outline"
               size="sm"
               onClick={addSubMeter}
+              className="cursor-pointer hover:bg-primary hover:text-primary-foreground transition-colors"
             >
               + Add Meter
             </Button>
@@ -440,6 +457,7 @@ export function RegisterForm() {
                     variant="outline"
                     size="icon"
                     onClick={() => removeSubMeter(index)}
+                    className="cursor-pointer hover:bg-destructive hover:text-destructive-foreground transition-colors"
                   >
                     ×
                   </Button>
@@ -474,7 +492,15 @@ export function RegisterForm() {
           </div>
         </div>
 
-        {/* Terms */}
+        {/* Terms Box */}
+        <div className="bg-muted/30 dark:bg-muted/10 rounded-xl border border-border p-4">
+          <h3 className="font-semibold mb-2">Terms and Conditions</h3>
+          <div className="h-64 overflow-y-auto pr-2 text-sm border bg-background rounded-md p-4">
+            <TermsContent />
+          </div>
+        </div>
+
+        {/* Terms Checkbox */}
         <div className="flex items-start gap-3">
           <Controller
             name="terms"
@@ -511,7 +537,7 @@ export function RegisterForm() {
         <Button
           type="submit"
           size="lg"
-          className="w-full"
+          className="w-full cursor-pointer hover:bg-primary/90 transition-colors"
           disabled={isSubmitting}
         >
           {isSubmitting ? 'Submitting...' : 'Submit Registration'}
