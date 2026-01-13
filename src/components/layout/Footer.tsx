@@ -116,7 +116,7 @@ export function Footer() {
                 </li>
                 <li>
                   <p className="text-sm text-background/70 mt-2">
-                    Kirima House 2nd Floor, Room 10
+                    Kirima House 2nd Floor, Room 16
                     <br />
                     Along Duruma Road
                     <br />
