@@ -5,8 +5,8 @@ export function Footer() {
   return (
     <footer className="border-t bg-foreground text-background">
       <div className="container mx-auto px-4 pt-12 pb-24 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
-          <div className="space-y-4 max-w-sm">
+        <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-4">
+          <div className="space-y-4 max-w-xs">
             <img
               src="/logo-for-darkmode.png"
               alt="Kensmart Utilities Limited Logo"
@@ -23,7 +23,7 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:flex lg:gap-12 w-full justify-between">
             <div className="space-y-3">
               <h4 className="text-sm font-medium text-background">Pages</h4>
               <ul className="space-y-2 text-sm text-background/70">
@@ -117,6 +117,8 @@ export function Footer() {
                 <li>
                   <p className="text-sm text-background/70 mt-2">
                     Kirima House 2nd Floor, Room 16
+                    <br />
+                    PO BOX 9627-00200 NAIROBI
                     <br />
                     Along Duruma Road
                     <br />

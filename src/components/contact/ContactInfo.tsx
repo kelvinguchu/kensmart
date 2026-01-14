@@ -194,6 +194,28 @@ export function ContactInfo() {
             </div>
           </div>
         </div>
+        <div className="grid lg:grid-cols-2 gap-6 mt-8">
+          <div className="bg-white dark:bg-card rounded-2xl p-2 border border-border h-[450px] overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3988.8189286517622!2d36.825576474965565!3d-1.2824427987053615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMcKwMTYnNTYuOCJTIDM2wrA0OSc0MS40IkU!5e0!3m2!1sen!2ske!4v1768423780982!5m2!1sen!2ske"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Office Location"
+              className="rounded-xl w-full h-full"
+            ></iframe>
+          </div>
+          <div className="bg-white dark:bg-card rounded-2xl p-2 border border-border h-[450px] overflow-hidden">
+            <img
+              src="/assets/office-building.jpeg"
+              alt="Office Building"
+              className="w-full h-full object-cover rounded-xl"
+            />
+          </div>
+        </div>
       </div>
     </section>
   )

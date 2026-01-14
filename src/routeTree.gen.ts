@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as RegisterRouteImport } from './routes/register'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as MetersRouteImport } from './routes/meters'
 import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -31,6 +32,11 @@ const RegisterRoute = RegisterRouteImport.update({
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MetersRoute = MetersRouteImport.update({
+  id: '/meters',
+  path: '/meters',
   getParentRoute: () => rootRouteImport,
 } as any)
 const GalleryRoute = GalleryRouteImport.update({
@@ -54,9 +60,9 @@ const IndexRoute = IndexRouteImport.update({
   getParentRoute: () => rootRouteImport,
 } as any)
 const MetersMeterIdRoute = MetersMeterIdRouteImport.update({
-  id: '/meters/$meterId',
-  path: '/meters/$meterId',
-  getParentRoute: () => rootRouteImport,
+  id: '/$meterId',
+  path: '/$meterId',
+  getParentRoute: () => MetersRoute,
 } as any)
 
 export interface FileRoutesByFullPath {
@@ -64,6 +70,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/meters': typeof MetersRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
@@ -74,6 +81,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/meters': typeof MetersRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
@@ -85,6 +93,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
+  '/meters': typeof MetersRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
@@ -97,6 +106,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/meters'
     | '/privacy'
     | '/register'
     | '/terms'
@@ -107,6 +117,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/meters'
     | '/privacy'
     | '/register'
     | '/terms'
@@ -117,6 +128,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/gallery'
+    | '/meters'
     | '/privacy'
     | '/register'
     | '/terms'
@@ -128,10 +140,10 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   GalleryRoute: typeof GalleryRoute
+  MetersRoute: typeof MetersRouteWithChildren
   PrivacyRoute: typeof PrivacyRoute
   RegisterRoute: typeof RegisterRoute
   TermsRoute: typeof TermsRoute
-  MetersMeterIdRoute: typeof MetersMeterIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -155,6 +167,13 @@ declare module '@tanstack/react-router' {
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/meters': {
+      id: '/meters'
+      path: '/meters'
+      fullPath: '/meters'
+      preLoaderRoute: typeof MetersRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/gallery': {
@@ -187,23 +206,34 @@ declare module '@tanstack/react-router' {
     }
     '/meters/$meterId': {
       id: '/meters/$meterId'
-      path: '/meters/$meterId'
+      path: '/$meterId'
       fullPath: '/meters/$meterId'
       preLoaderRoute: typeof MetersMeterIdRouteImport
-      parentRoute: typeof rootRouteImport
+      parentRoute: typeof MetersRoute
     }
   }
 }
+
+interface MetersRouteChildren {
+  MetersMeterIdRoute: typeof MetersMeterIdRoute
+}
+
+const MetersRouteChildren: MetersRouteChildren = {
+  MetersMeterIdRoute: MetersMeterIdRoute,
+}
+
+const MetersRouteWithChildren =
+  MetersRoute._addFileChildren(MetersRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   GalleryRoute: GalleryRoute,
+  MetersRoute: MetersRouteWithChildren,
   PrivacyRoute: PrivacyRoute,
   RegisterRoute: RegisterRoute,
   TermsRoute: TermsRoute,
-  MetersMeterIdRoute: MetersMeterIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
