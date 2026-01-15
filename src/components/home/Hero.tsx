@@ -81,7 +81,7 @@ export function Hero() {
                     ?.scrollIntoView({ behavior: 'smooth' })
                 }}
               >
-                View Products
+                Buy Now
               </Button>
             </div>
           </div>
