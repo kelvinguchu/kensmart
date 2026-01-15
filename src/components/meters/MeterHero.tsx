@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router'
+import { FaWhatsapp } from 'react-icons/fa'
 import type { Product } from '@/data/products'
 import { Button } from '@/components/ui/button'
 
@@ -62,8 +63,24 @@ export function MeterHero({ product }: MeterHeroProps) {
               </div>
 
               {/* Actions */}
-              <div className="flex gap-3">
-                <Button asChild size="lg">
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-[#25D366] hover:bg-[#128C7E] text-white border-none"
+                >
+                  <a
+                    href={`https://wa.me/254701860991?text=${encodeURIComponent(
+                      `Hi, I am interested in the ${product.name}. ${typeof window !== 'undefined' ? window.location.href : `https://kensmart.co.ke/meters/${product.id}`}`,
+                    )}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaWhatsapp className="text-lg" />
+                    Order on WhatsApp
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="text-black hover:text-white">
                   <Link to="/contact">Ask a Question</Link>
                 </Button>
               </div>

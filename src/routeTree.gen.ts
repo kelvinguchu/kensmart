@@ -17,6 +17,7 @@ import { Route as GalleryRouteImport } from './routes/gallery'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as MetersIndexRouteImport } from './routes/meters.index'
 import { Route as MetersMeterIdRouteImport } from './routes/meters.$meterId'
 
 const TermsRoute = TermsRouteImport.update({
@@ -59,6 +60,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MetersIndexRoute = MetersIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => MetersRoute,
+} as any)
 const MetersMeterIdRoute = MetersMeterIdRouteImport.update({
   id: '/$meterId',
   path: '/$meterId',
@@ -75,17 +81,18 @@ export interface FileRoutesByFullPath {
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
   '/meters/$meterId': typeof MetersMeterIdRoute
+  '/meters/': typeof MetersIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/gallery': typeof GalleryRoute
-  '/meters': typeof MetersRouteWithChildren
   '/privacy': typeof PrivacyRoute
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
   '/meters/$meterId': typeof MetersMeterIdRoute
+  '/meters': typeof MetersIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -98,6 +105,7 @@ export interface FileRoutesById {
   '/register': typeof RegisterRoute
   '/terms': typeof TermsRoute
   '/meters/$meterId': typeof MetersMeterIdRoute
+  '/meters/': typeof MetersIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -111,17 +119,18 @@ export interface FileRouteTypes {
     | '/register'
     | '/terms'
     | '/meters/$meterId'
+    | '/meters/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/about'
     | '/contact'
     | '/gallery'
-    | '/meters'
     | '/privacy'
     | '/register'
     | '/terms'
     | '/meters/$meterId'
+    | '/meters'
   id:
     | '__root__'
     | '/'
@@ -133,6 +142,7 @@ export interface FileRouteTypes {
     | '/register'
     | '/terms'
     | '/meters/$meterId'
+    | '/meters/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -204,6 +214,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/meters/': {
+      id: '/meters/'
+      path: '/'
+      fullPath: '/meters/'
+      preLoaderRoute: typeof MetersIndexRouteImport
+      parentRoute: typeof MetersRoute
+    }
     '/meters/$meterId': {
       id: '/meters/$meterId'
       path: '/$meterId'
@@ -216,10 +233,12 @@ declare module '@tanstack/react-router' {
 
 interface MetersRouteChildren {
   MetersMeterIdRoute: typeof MetersMeterIdRoute
+  MetersIndexRoute: typeof MetersIndexRoute
 }
 
 const MetersRouteChildren: MetersRouteChildren = {
   MetersMeterIdRoute: MetersMeterIdRoute,
+  MetersIndexRoute: MetersIndexRoute,
 }
 
 const MetersRouteWithChildren =
