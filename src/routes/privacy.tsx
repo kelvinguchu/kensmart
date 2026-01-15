@@ -22,13 +22,13 @@ export const Route = createFileRoute('/privacy')({
       },
       {
         property: 'og:url',
-        content: 'https://kensmart.co.ke/privacy',
+        content: 'https://www.ksmart.co.ke/privacy',
       },
     ],
     links: [
       {
         rel: 'canonical',
-        href: 'https://kensmart.co.ke/privacy',
+        href: 'https://www.ksmart.co.ke/privacy',
       },
     ],
   }),

@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://kensmart.co.ke/</loc>
+    <loc>https://www.ksmart.co.ke/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/about</loc>
+    <loc>https://www.ksmart.co.ke/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/contact</loc>
+    <loc>https://www.ksmart.co.ke/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/register</loc>
+    <loc>https://www.ksmart.co.ke/register</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/meters/integrated</loc>
+    <loc>https://www.ksmart.co.ke/meters/integrated</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/meters/split</loc>
+    <loc>https://www.ksmart.co.ke/meters/split</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/meters/water</loc>
+    <loc>https://www.ksmart.co.ke/meters/water</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/meters/three-phase</loc>
+    <loc>https://www.ksmart.co.ke/meters/three-phase</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/meters/gas</loc>
+    <loc>https://www.ksmart.co.ke/meters/gas</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/privacy</loc>
+    <loc>https://www.ksmart.co.ke/privacy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://kensmart.co.ke/terms</loc>
+    <loc>https://www.ksmart.co.ke/terms</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

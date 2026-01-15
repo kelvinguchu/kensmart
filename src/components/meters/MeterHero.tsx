@@ -71,7 +71,7 @@ export function MeterHero({ product }: MeterHeroProps) {
                 >
                   <a
                     href={`https://wa.me/254701860991?text=${encodeURIComponent(
-                      `Hi, I am interested in the ${product.name}. ${typeof window !== 'undefined' ? window.location.href : `https://kensmart.co.ke/meters/${product.id}`}`,
+                      `Hi, I am interested in the ${product.name}. ${typeof window !== 'undefined' ? window.location.href : `https://www.ksmart.co.ke/meters/${product.id}`}`,
                     )}`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -80,7 +80,12 @@ export function MeterHero({ product }: MeterHeroProps) {
                     Order on WhatsApp
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="text-black hover:text-white">
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="text-black hover:text-white"
+                >
                   <Link to="/contact">Ask a Question</Link>
                 </Button>
               </div>

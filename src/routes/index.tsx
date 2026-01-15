@@ -29,13 +29,13 @@ export const Route = createFileRoute('/')({
       },
       {
         property: 'og:url',
-        content: 'https://kensmart.co.ke/',
+        content: 'https://www.ksmart.co.ke/',
       },
     ],
     links: [
       {
         rel: 'canonical',
-        href: 'https://kensmart.co.ke/',
+        href: 'https://www.ksmart.co.ke/',
       },
     ],
     scripts: [
@@ -45,10 +45,10 @@ export const Route = createFileRoute('/')({
           '@context': 'https://schema.org',
           '@type': 'WebSite',
           name: 'Kensmart Utilities',
-          url: 'https://kensmart.co.ke',
+          url: 'https://www.ksmart.co.ke',
           potentialAction: {
             '@type': 'SearchAction',
-            target: 'https://kensmart.co.ke/search?q={search_term_string}',
+            target: 'https://www.ksmart.co.ke/search?q={search_term_string}',
             'query-input': 'required name=search_term_string',
           },
         }),
@@ -59,9 +59,9 @@ export const Route = createFileRoute('/')({
           '@context': 'https://schema.org',
           '@type': 'LocalBusiness',
           name: 'Kensmart Utilities Limited',
-          image: 'https://kensmart.co.ke/logo-for-lightmode.png',
-          '@id': 'https://kensmart.co.ke',
-          url: 'https://kensmart.co.ke',
+          image: 'https://www.ksmart.co.ke/logo-for-lightmode.png',
+          '@id': 'https://www.ksmart.co.ke',
+          url: 'https://www.ksmart.co.ke',
           telephone: '+254700000000',
           address: {
             '@type': 'PostalAddress',

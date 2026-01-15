@@ -1,15 +1,15 @@
 <rss xmlns:g="http://base.google.com/ns/1.0" version="2.0">
 <channel>
 <title>Kensmart Utilities Products</title>
-<link>https://kensmart.co.ke</link>
+<link>https://www.ksmart.co.ke</link>
 <description>Google Merchant product feed for Kensmart Utilities</description>
 
 <item>
 <g:id>integrated</g:id>
 <title>Integrated Electric Prepaid Meter</title>
 <description>A unified prepaid metering system that combines measurement and payment interface in one sleek unit. Perfect for straightforward installations where tenants manage their own top-ups directly on the device.</description>
-<link>https://kensmart.co.ke/meters/integrated</link>
-<g:image_link>https://kensmart.co.ke/products/integrated-electric.jpeg</g:image_link>
+<link>https://www.ksmart.co.ke/meters/integrated</link>
+<g:image_link>https://www.ksmart.co.ke/products/integrated-electric.jpeg</g:image_link>
 <g:availability>in stock</g:availability>
 <g:price>4500.00 KES</g:price>
 <g:condition>new</g:condition>
@@ -22,8 +22,8 @@
 <g:id>split</g:id>
 <title>Split Electric Prepaid Meter</title>
 <description>A two-component system that separates the metering unit from the user interface. The measurement module stays secured in the electrical panel while tenants interact with a wireless display unit for convenient token entry.</description>
-<link>https://kensmart.co.ke/meters/split</link>
-<g:image_link>https://kensmart.co.ke/products/split-electric.jpeg</g:image_link>
+<link>https://www.ksmart.co.ke/meters/split</link>
+<g:image_link>https://www.ksmart.co.ke/products/split-electric.jpeg</g:image_link>
 <g:availability>in stock</g:availability>
 <g:price>7500.00 KES</g:price>
 <g:condition>new</g:condition>
@@ -36,8 +36,8 @@
 <g:id>water</g:id>
 <title>Water Prepaid Meter</title>
 <description>An intelligent water metering solution with automatic valve control. Detects leaks early, prevents water wastage, and automatically shuts off when credit runs out—protecting both your property and your wallet.</description>
-<link>https://kensmart.co.ke/meters/water</link>
-<g:image_link>https://kensmart.co.ke/products/water-prepaid.avif</g:image_link>
+<link>https://www.ksmart.co.ke/meters/water</link>
+<g:image_link>https://www.ksmart.co.ke/products/water-prepaid.avif</g:image_link>
 <g:availability>in stock</g:availability>
 <g:price>12500.00 KES</g:price>
 <g:condition>new</g:condition>
@@ -50,8 +50,8 @@
 <g:id>three-phase</g:id>
 <title>3 Phase Prepaid Meter</title>
 <description>Engineered for high-demand environments requiring three-phase power. Delivers precision metering for commercial and industrial loads, ensuring accurate billing for heavy-duty electrical consumption.</description>
-<link>https://kensmart.co.ke/meters/three-phase</link>
-<g:image_link>https://kensmart.co.ke/products/3-phase-electric.avif</g:image_link>
+<link>https://www.ksmart.co.ke/meters/three-phase</link>
+<g:image_link>https://www.ksmart.co.ke/products/3-phase-electric.avif</g:image_link>
 <g:availability>in stock</g:availability>
 <g:price>18500.00 KES</g:price>
 <g:condition>new</g:condition>
@@ -64,8 +64,8 @@
 <g:id>gas</g:id>
 <title>Gas Prepaid Meter</title>
 <description>Reliable prepaid metering for piped gas installations. Features a safety shutoff valve and precision diaphragm measurement for accurate billing and peace of mind in gas-connected properties.</description>
-<link>https://kensmart.co.ke/meters/gas</link>
-<g:image_link>https://kensmart.co.ke/products/gas-prepaid.avif</g:image_link>
+<link>https://www.ksmart.co.ke/meters/gas</link>
+<g:image_link>https://www.ksmart.co.ke/products/gas-prepaid.avif</g:image_link>
 <g:availability>in stock</g:availability>
 <g:price>9000.00 KES</g:price>
 <g:condition>new</g:condition>

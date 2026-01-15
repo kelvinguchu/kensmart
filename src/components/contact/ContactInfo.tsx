@@ -183,7 +183,7 @@ export function ContactInfo() {
                 <div>
                   <h3 className="font-semibold mb-0.5">Visit Us</h3>
                   <p className="text-sm text-muted-foreground">
-                    Kirima House 2nd Floor, Room 10
+                    Kirima House 2nd Floor, Room 16
                     <br />
                     Along Duruma Road
                     <br />

@@ -25,13 +25,13 @@ export const Route = createFileRoute('/about')({
       },
       {
         property: 'og:url',
-        content: 'https://kensmart.co.ke/about',
+        content: 'https://www.ksmart.co.ke/about',
       },
     ],
     links: [
       {
         rel: 'canonical',
-        href: 'https://kensmart.co.ke/about',
+        href: 'https://www.ksmart.co.ke/about',
       },
     ],
     scripts: [
@@ -45,7 +45,7 @@ export const Route = createFileRoute('/about')({
             name: 'Kensmart Utilities Limited',
             description:
               'Kensmart Utilities Limited delivers smart solutions for power and water.',
-            url: 'https://kensmart.co.ke',
+            url: 'https://www.ksmart.co.ke',
           },
         }),
       },

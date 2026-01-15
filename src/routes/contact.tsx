@@ -23,13 +23,13 @@ export const Route = createFileRoute('/contact')({
       },
       {
         property: 'og:url',
-        content: 'https://kensmart.co.ke/contact',
+        content: 'https://www.ksmart.co.ke/contact',
       },
     ],
     links: [
       {
         rel: 'canonical',
-        href: 'https://kensmart.co.ke/contact',
+        href: 'https://www.ksmart.co.ke/contact',
       },
     ],
     scripts: [

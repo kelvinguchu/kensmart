@@ -23,13 +23,13 @@ export const Route = createFileRoute('/terms')({
       },
       {
         property: 'og:url',
-        content: 'https://kensmart.co.ke/terms',
+        content: 'https://www.ksmart.co.ke/terms',
       },
     ],
     links: [
       {
         rel: 'canonical',
-        href: 'https://kensmart.co.ke/terms',
+        href: 'https://www.ksmart.co.ke/terms',
       },
     ],
   }),

@@ -40,11 +40,11 @@ export const Route = createFileRoute('/meters/$meterId')({
         },
         {
           property: 'og:image',
-          content: `https://kensmart.co.ke${product.image}`,
+          content: `https://www.ksmart.co.ke${product.image}`,
         },
         {
           property: 'og:url',
-          content: `https://kensmart.co.ke/meters/${params.meterId}`,
+          content: `https://www.ksmart.co.ke/meters/${params.meterId}`,
         },
         {
           name: 'twitter:card',
@@ -60,13 +60,13 @@ export const Route = createFileRoute('/meters/$meterId')({
         },
         {
           name: 'twitter:image',
-          content: `https://kensmart.co.ke${product.image}`,
+          content: `https://www.ksmart.co.ke${product.image}`,
         },
       ],
       links: [
         {
           rel: 'canonical',
-          href: `https://kensmart.co.ke/meters/${params.meterId}`,
+          href: `https://www.ksmart.co.ke/meters/${params.meterId}`,
         },
       ],
       scripts: [
@@ -76,7 +76,7 @@ export const Route = createFileRoute('/meters/$meterId')({
             '@context': 'https://schema.org',
             '@type': 'Product',
             name: product.name,
-            image: `https://kensmart.co.ke${product.image}`,
+            image: `https://www.ksmart.co.ke${product.image}`,
             description: product.description,
             brand: {
               '@type': 'Brand',
@@ -84,7 +84,7 @@ export const Route = createFileRoute('/meters/$meterId')({
             },
             offers: {
               '@type': 'Offer',
-              url: `https://kensmart.co.ke/meters/${params.meterId}`,
+              url: `https://www.ksmart.co.ke/meters/${params.meterId}`,
               priceCurrency: 'KES',
               price: product.price.replace(/,/g, ''),
               availability: 'https://schema.org/InStock',

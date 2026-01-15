@@ -2,5 +2,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://kensmart.co.ke/sitemap.xml
-Sitemap: https://kensmart.co.ke/image-sitemap.xml
+Sitemap: https://www.ksmart.co.ke/sitemap.xml
+Sitemap: https://www.ksmart.co.ke/image-sitemap.xml
+Sitemap: https://www.ksmart.co.ke/products.xml

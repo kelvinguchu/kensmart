@@ -47,7 +47,7 @@ export const Route = createRootRoute({
       },
       {
         property: 'og:image',
-        content: 'https://kensmart.co.ke/opengraph-image.png',
+        content: 'https://www.ksmart.co.ke/opengraph-image.png',
       },
       {
         property: 'og:type',
@@ -70,7 +70,7 @@ export const Route = createRootRoute({
       },
       {
         name: 'twitter:image',
-        content: 'https://kensmart.co.ke/opengraph-image.png',
+        content: 'https://www.ksmart.co.ke/opengraph-image.png',
       },
     ],
     links: [
@@ -123,8 +123,8 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'Kensmart Utilities Limited',
-              url: 'https://kensmart.co.ke',
-              logo: 'https://kensmart.co.ke/logo-for-lightmode.png',
+              url: 'https://www.ksmart.co.ke',
+              logo: 'https://www.ksmart.co.ke/logo-for-lightmode.png',
               contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+254712431201',
