@@ -115,7 +115,7 @@ function MeterDetailsPage() {
   }
 
   return (
-    <main className="pt-8 md:pt-24">
+    <main className="pt-8">
       <MeterHero product={product} />
       <MeterSpecs product={product} />
     </main>

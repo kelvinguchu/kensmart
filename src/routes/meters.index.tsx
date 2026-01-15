@@ -19,7 +19,7 @@ export const Route = createFileRoute('/meters/')({
 
 function MetersIndexPage() {
   return (
-    <div className="pt-24 min-h-screen bg-background">
+    <div className="pt-16 min-h-screen bg-background">
       <ProductShowcase />
     </div>
   )
