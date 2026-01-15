@@ -1,6 +1,7 @@
 import { Link, useRouterState } from '@tanstack/react-router'
 import { useEffect, useState } from 'react'
 import { ArrowRight, ChevronDown, Menu } from 'lucide-react'
+import { RiFacebookLine, RiTiktokLine } from 'react-icons/ri'
 import { products } from '@/data/products'
 import { cn } from '@/lib/utils'
 import { Button } from '@/components/ui/button'
@@ -158,10 +159,28 @@ export function Header() {
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-2 mr-2">
+              <a
+                href="https://www.facebook.com/share/1AoSAZXVUN/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-muted-foreground hover:text-primary transition-colors hover:bg-secondary/20 rounded-full border border-foreground/30 hover:border-primary"
+              >
+                <RiFacebookLine className="w-5 h-5" />
+              </a>
+              <a
+                href="https://vm.tiktok.com/ZMHohHfNnVb8L-r35pc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-muted-foreground hover:text-primary transition-colors hover:bg-secondary/20 rounded-full border border-foreground/30 hover:border-primary"
+              >
+                <RiTiktokLine className="w-5 h-5" />
+              </a>
+            </div>
             <div className="hidden lg:block">
               <Link to="/register">
                 <Button className="rounded-md px-6 font-semibold shadow-md active:scale-95 transition-all cursor-pointer">
-                  Get Started
+                  Register
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
@@ -264,7 +283,25 @@ export function Header() {
                     </div>
                   </nav>
 
-                  <div className="p-6 border-t mt-auto">
+                  <div className="p-6 border-t mt-auto space-y-4">
+                    <div className="flex justify-center gap-6">
+                      <a
+                        href="https://www.facebook.com/share/1AoSAZXVUN/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-full border border-border/50 hover:border-primary/50"
+                      >
+                        <RiFacebookLine className="w-6 h-6" />
+                      </a>
+                      <a
+                        href="https://vm.tiktok.com/ZMHohHfNnVb8L-r35pc/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 text-muted-foreground hover:text-primary transition-colors rounded-full border border-border/50 hover:border-primary/50"
+                      >
+                        <RiTiktokLine className="w-6 h-6" />
+                      </a>
+                    </div>
                     <SheetClose asChild>
                       <Link to="/register">
                         <Button className="w-full rounded-md font-semibold text-lg">

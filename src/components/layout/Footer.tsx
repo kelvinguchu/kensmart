@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router'
+import { RiFacebookLine, RiTiktokLine } from 'react-icons/ri'
 import { products } from '@/data/products'
 
 export function Footer() {
@@ -21,6 +22,24 @@ export function Footer() {
               Smart solutions for power and water. Delivering prepaid metering
               for modern property management.
             </p>
+            <div className="flex gap-4 pt-2">
+              <a
+                href="https://www.facebook.com/share/1AoSAZXVUN/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-background/70 hover:text-primary transition-colors rounded-full border border-background/30 hover:border-primary/50"
+              >
+                <RiFacebookLine className="w-5 h-5" />
+              </a>
+              <a
+                href="https://vm.tiktok.com/ZMHohHfNnVb8L-r35pc/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-background/70 hover:text-primary transition-colors rounded-full border border-background/30 hover:border-primary/50"
+              >
+                <RiTiktokLine className="w-5 h-5" />
+              </a>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:flex lg:gap-12 w-full justify-between">
